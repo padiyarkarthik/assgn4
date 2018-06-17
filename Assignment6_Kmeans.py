@@ -9,8 +9,8 @@ from scipy.cluster.vq import *
 from flask import Flask,render_template,request
 
 app = Flask(__name__,template_folder="static")
-coloumn_names = ["Postal","House","Sector","City","State","Lat","Long","Bracket","Occupancy","District"]
-myfile = open("data2.csv","r")
+coloumn_names = ["pclass","survived","name","sex","age","sibsp","parch","ticket","fare","cabin","embarked","boat","body","home.dest"]
+myfile = open("titanic3.csv","r")
 csv_reader = csv.DictReader(myfile, fieldnames=coloumn_names)
 next(csv_reader)
 
