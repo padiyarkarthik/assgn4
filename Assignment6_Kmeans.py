@@ -1,4 +1,6 @@
 import csv
+from matplotlib import pylab
+from pylab import *
 import pylab
 import numpy as np
 import uuid
@@ -138,4 +140,4 @@ def Piegraph():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,port=6010)
+    app.run(debug=True,port=5000)
