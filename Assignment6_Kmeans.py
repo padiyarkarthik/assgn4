@@ -102,7 +102,7 @@ def main():
         pylab.scatter(cent[:,0],cent[:,1], marker='o', s = 400, linewidths=3, c='none')
         pylab.scatter(cent[:,0],cent[:,1], marker='x', s = 400, linewidths=3)
 
-        pylab.savefig("templates/kmeans6.png")
+        #pylab.savefig("templates/kmeans6.png")
 
         return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster)
 
