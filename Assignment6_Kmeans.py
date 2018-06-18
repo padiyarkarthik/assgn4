@@ -96,13 +96,13 @@ def main():
             print ("No of points in cluster with " + str(i) + " is: " + str(clr_dict[i]))
             f_write+= str(cnt)+','+str(clr_dict[i])+'\r\n'
             cnt += 1
-        with open("static/d3chart.csv",'wb') as nfile:
+        with open("templates/d3chart.csv",'wb') as nfile:
             nfile.write(f_write.encode("utf-8"))
         pylab.scatter(data[:,0],data[:,1], c=colors)
         pylab.scatter(cent[:,0],cent[:,1], marker='o', s = 400, linewidths=3, c='none')
         pylab.scatter(cent[:,0],cent[:,1], marker='x', s = 400, linewidths=3)
 
-        pylab.savefig("static/kmeans6.png")
+        pylab.savefig("templates/kmeans6.png")
 
         return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster)
 
