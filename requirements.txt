@@ -1,5 +1,6 @@
 Flask==0.12.1
 
+pypyodbc
 matplotlib
 numpy
 scipy
