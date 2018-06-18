@@ -19,7 +19,7 @@ def index():
   return render_template('index.html')
 
 mylist = []
-@app.route('/cluster', methods=['GET', 'POST'])
+@app.route('/kmeans', methods=['GET', 'POST'])
 def main():
         attribute1 = request.form['attribute1']
         attribute2 = request.form['attribute2']
@@ -140,4 +140,4 @@ def Piegraph():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5000)
+    app.run(debug=True,port=5008)
