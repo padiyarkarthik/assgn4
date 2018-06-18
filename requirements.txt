@@ -4,4 +4,4 @@ pypyodbc
 matplotlib
 numpy
 scipy
-freetype
+
