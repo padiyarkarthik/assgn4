@@ -19,7 +19,7 @@ def index():
   return render_template('index.html')
 
 mylist = []
-@app.route('/kmeans', methods=['GET', 'POST'])
+@app.route('/kmeans/', methods=['GET', 'POST'])
 def main():
         attribute1 = request.form['attribute1']
         attribute2 = request.form['attribute2']
